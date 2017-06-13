@@ -56,7 +56,7 @@ function createTabInBackground(url, callback) {
 
 
 function getBookNameFromUrl(book_url) {
-    var re = new RegExp('https://www.safaribooksonline.com/library/view/(\.+)/\\d+/\.*');
+    var re = new RegExp('https://www.safaribooksonline.com/library/view/(\.+)/[0-9]+[A-Z]?/\.*');
     var book_match = re.exec(book_url);
     if (book_match == null) {
         return null;
